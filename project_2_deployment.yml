@@ -1,0 +1,7 @@
+- name: project 1 playbook
+  hosts: dune1
+
+  tasks: 
+    - name: debug
+      debug:
+        msg: "This is project_2 main deployment playbook"
