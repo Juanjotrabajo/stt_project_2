@@ -1,7 +1,11 @@
-- name: project 1 playbook
-  hosts: dune1
-
+- hosts: dune1
   tasks: 
     - name: debug
       debug:
         msg: "This is project_2 main deployment playbook"
+
+- hosts: dune1
+  tasks:
+  - import_role:
+      name: service_A
+      tasks_from: main.yml
