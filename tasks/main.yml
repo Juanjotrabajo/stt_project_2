@@ -2,4 +2,4 @@
 # tasks file for service_A_role
 - name: hello from service_A role
   debug:
-    msg: "This is service_A role, version ***2*** on service_A role repository, with nothing particular of any particular project"
+    msg: "This is service_A role, version ***2***, modified from project 2 repository"
