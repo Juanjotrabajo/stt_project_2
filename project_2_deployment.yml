@@ -9,3 +9,9 @@
   - import_role:
       name: service_A
       tasks_from: main.yml
+
+- hosts: all
+  tasks:
+  - import_role:
+      name: service_B
+      tasks_from: main.yml
