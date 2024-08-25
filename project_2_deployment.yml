@@ -1,10 +1,10 @@
-- hosts: dune1
+- hosts: all
   tasks: 
     - name: debug
       debug:
         msg: "This is project_2 main deployment playbook"
 
-- hosts: dune1
+- hosts: all
   tasks:
   - import_role:
       name: service_A
